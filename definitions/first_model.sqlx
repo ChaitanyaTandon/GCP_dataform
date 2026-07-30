@@ -1,0 +1,10 @@
+
+
+config {
+  type: "view",
+  schema: "test_ds"
+}
+
+
+SELECT 'Test' AS name,
+       'Test 2' AS name_2
