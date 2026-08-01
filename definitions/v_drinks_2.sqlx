@@ -1,0 +1,12 @@
+config {
+  type: "view",
+  schema : "raw",
+  name : "v_drinks_2"
+}
+
+
+SELECT DISTINCT drink_id,
+                drink_name,
+                drink_type
+
+                FROM ${ref("v_drinks")}
