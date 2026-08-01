@@ -1,10 +1,9 @@
 
 
 config {
-  type: "view",
-  schema: "test_ds"
+  type: "table"
 }
 
 
-SELECT 'Test' AS name,
-       'Test 2' AS name_2
+SELECT 'Dataform' AS name,
+       'GCP' AS Platform
