@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database : "project-471bfbdc-a559-46fe-a54",
+  schema : "raw",
+  name : "drinks"
+}
+
