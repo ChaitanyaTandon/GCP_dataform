@@ -1,9 +1,0 @@
-
-
-config {
-  type: "table"
-}
-
-
-SELECT 'Dataform' AS name,
-       'GCP' AS Platform
