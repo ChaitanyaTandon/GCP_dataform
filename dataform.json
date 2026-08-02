@@ -1,0 +1,12 @@
+{
+    "defaultDatabase"          : "project-471bfbdc-a559-46fe-a54",
+    "defaultSchema"          : "dataform",
+    "assertionSchema" : "dataform_assertions",
+   
+
+
+    "vars": {
+        "environment"         : "dev",
+        "execution_date"      : "2026-07-02"
+            }
+}
