@@ -1,0 +1,16 @@
+config {
+  type: "incremental",
+  schema : "dataform",
+  name : "t_meals_drinks",
+  uniqueKey: ["drink_id", "meal_id"]
+}
+
+
+SELECT DISTINCT d.drink_name,
+                d.drink_id,
+                m.meal_id,
+                m.meal_name
+               FROM ${ref("drinks")} d
+               INNER JOIN ${ref("meals")} m ON d.drink_id = m.drink_id
+
+               WHERE m.date = '${dataform.projectConfig.vars.execution_date}'
