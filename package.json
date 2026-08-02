@@ -1,0 +1,7 @@
+{
+  "name": "dataform-scd",
+  "dependencies": {
+    "@dataform/core": "3.0.52",
+    "dataform-scd": "file:./dataform-scd-0.3.tar.gz"
+  }
+}
