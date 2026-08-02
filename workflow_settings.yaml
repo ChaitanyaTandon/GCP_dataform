@@ -2,3 +2,8 @@ defaultProject: project-471bfbdc-a559-46fe-a54
 defaultDataset: dataform
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.52
+
+
+vars:
+  environment: "dev"
+  execution_date: "2026-07-02"

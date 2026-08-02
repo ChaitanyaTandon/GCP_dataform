@@ -1,0 +1,10 @@
+config {
+  type: "table",
+  schema : "dataform",
+  name : "t_drinks",
+}
+
+
+SELECT *
+        FROM ${ref("drinks")}
+        WHERE date =  '${dataform.projectConfig.vars.execution_date}' 
