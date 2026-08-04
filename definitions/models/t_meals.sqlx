@@ -1,8 +1,14 @@
 config {
-  type: "incremental",
-  schema : "dataform",
-  name : "t_meals",
-  uniqueKey : ["meal_id"]
+  type: "table",
+  schema: "dataform",
+  name: "t_meals",
+  assertions: {
+    nonNull: ["meal_id", "meal_name", "calories"],
+    rowConditions: [
+      'execution_date < "2022-08-01"',
+      'meal_name LIKE "S%"'
+    ]
+  }
 }
 
 
@@ -12,4 +18,3 @@ SELECT DISTINCT meal_id,
                 '${dataform.projectConfig.vars.execution_date}' AS execution_date
 
                 FROM ${ref("meals")}
-                WHERE date = '${dataform.projectConfig.vars.execution_date}'
